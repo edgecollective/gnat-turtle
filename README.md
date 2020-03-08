@@ -20,3 +20,7 @@ sudo rm /etc/ssh/ssh_host*
 sudo ssh-keygen -A
 ```
 
+### zipping and showing progress
+
+pv rak-chirp-03-08-20-pi-01.img | zip > rak1.zip
+
