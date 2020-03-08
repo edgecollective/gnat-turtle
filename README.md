@@ -9,7 +9,9 @@ gnat-based turtle tracker
 
 ### copying microSD in linux
 
-> sudo dd if=/dev/mmcblk0 of=./rak-chirp-03-08-20-pi-01.img status=progress
+```
+sudo dd if=/dev/mmcblk0 of=./rak-chirp-03-08-20-pi-01.img status=progress
+```
 
 ### removing and generating new ssh host keys
 
