@@ -7,6 +7,43 @@ gnat-based turtle tracker
 
 - In [Linux](https://ragnyll.gitlab.io/2018/05/22/format-a-sd-card-to-fat-32linux.html)
 
+to figure out which disk:
+
+```
+sudo fdisk -l
+```
+
+e.g. mmcblk0
+
+unmount the disk
+
+then to erase partitions, run the command:
+
+```
+sudo fdisk /dev/mmcblk0
+```
+
+then use:
+
+```
+p
+n
+(accept defaults)
+t
+b
+w
+```
+
+then to format:
+
+```
+mkfs.vfat /dev/mmcblk0p1
+```
+
+
+
+
+
 ### copying microSD in linux
 
 ```
