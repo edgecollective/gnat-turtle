@@ -22,5 +22,14 @@ sudo ssh-keygen -A
 
 ### zipping and showing progress
 
-pv rak-chirp-03-08-20-pi-01.img | zip > rak1.zip
+NOTE: this shows progress, but doesn't produce a viable zip file:
+
+```pv rak-chirp-03-08-20-pi-01.img | zip > rak1.zip
+```
+
+Instead, use:
+
+```
+zip rak2.zip rak-chirp-team-1602885022-date-2020-06-08.img 
+```
 
